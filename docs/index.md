@@ -24,32 +24,27 @@ My resume can be found [**here**](https://drive.google.com/file/d/185IHAjhCUS054
 - [Resume](https://drive.google.com/file/d/185IHAjhCUS054EFnxvIx8bIak2YJqT0N/view)    
 
 
+<p>
 <a href="mailto:anshsachdevaprofessional@gmail.com">
-    <img src="https://github.com/root-ansh/curioustools/blob/master/docs/img/email.png" height="64" width="64" alt="gmail">
+    <img src="https://raw.githubusercontent.com/root-ansh/curioustools/master/docs/img/email.png" height="64" width="64" alt="gmail">
 </a>
 
 <a href="https://www.linkedin.com/in/anshsachdevaprofessional">
-    <img src="https://github.com/root-ansh/curioustools/blob/master/docs/img/linkedin.png" height="64" width="64" alt="linkedin">
+    <img src="https://raw.githubusercontent.com/root-ansh/curioustools/master/docs/img/linkedin.png" height="64" width="64" alt="linkedin">
 </a>
 
 <a href="https://github.com/root-ansh">
-    <img src="https://github.com/root-ansh/curioustools/blob/master/docs/img/github.png" height="64" width="64" alt="github">
+    <img src="https://raw.githubusercontent.com/root-ansh/curioustools/master/docs/img/github.png" height="64" width="64" alt="github">
 </a>
 
 <a href="https://medium.com/@anshsachdevaprofessional">
-    <img src="https://github.com/root-ansh/curioustools/blob/master/docs/img/medium.png" height="64" width="64" alt="medium">
+    <img src="https://raw.githubusercontent.com/root-ansh/curioustools/master/docs/img/medium.png" height="64" width="64" alt="medium">
 </a>
 
 <a href="https://twitter.com/root_ansh">
-    <img src="https://github.com/root-ansh/curioustools/blob/master/docs/img/twitter.png" height="64" width="64" alt="gmail">
+    <img src="https://raw.githubusercontent.com/root-ansh/curioustools/master/docs/img/twitter.png" height="64" width="64" alt="gmail">
 </a>
-
-
-
-
------------------------------------
-| gmail | linkeding | medium | ...|
------------------------------------
+</p>
 
 
 	  
