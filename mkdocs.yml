@@ -1,6 +1,7 @@
 site_name: Curioustools # Website name(comes on top left in nav bar)
 site_description: Google certified Associate Android Dev #browser tab tooltip text
 site_author: Ansh Sachdeva(root-ansh) #don't know where does it shows
+site_url: https://root-ansh.github.io/curioustools/  # used for using local images in production
 
 #Header
 #repo_name: 'root-ansh/curioustools'
