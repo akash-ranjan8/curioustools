@@ -1,0 +1,1083 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Google certified Associate Android Dev">
+      
+      
+      
+        <meta name="author" content="Ansh Sachdeva(root-ansh)">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
+    
+    
+      
+        <title>Exoplayer - Curioustools</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.30686662.css">
+      
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="">
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="white" data-md-color-accent="green">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#exoplayer" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../.." title="Curioustools" class="md-header-nav__button md-logo">
+          
+            <img src="../../../img/logo/logo.svg" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Curioustools
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Exoplayer
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../.." class="md-tabs__link">
+        About Me
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../tab_edu/edu_details/" class="md-tabs__link">
+          Education Details
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../tab_work_exp/work_exp/" class="md-tabs__link">
+          Work Experience
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../tab_projects/project_summary/" class="md-tabs__link">
+          Portfolio
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../blog_summary/" class="md-tabs__link md-tabs__link--active">
+          Blogs
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../.." title="Curioustools" class="md-nav__button md-logo">
+      
+        <img src="../../../img/logo/logo.svg" width="48" height="48">
+      
+    </a>
+    Curioustools
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="About Me" class="md-nav__link">
+      About Me
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Education Details
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Education Details
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../tab_edu/edu_details/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Work Experience
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Work Experience
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../tab_work_exp/work_exp/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Portfolio
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Portfolio
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../tab_projects/project_summary/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../tab_projects/project_selfnotes.md" title="SelfNotes" class="md-nav__link">
+      SelfNotes
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+    
+    <label class="md-nav__link" for="nav-5">
+      Blogs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Blogs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blog_summary/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2" type="checkbox" id="nav-5-2" checked>
+    
+    <label class="md-nav__link" for="nav-5-2">
+      Android
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-2">
+        Android
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Exoplayer
+      </label>
+    
+    <a href="./" title="Exoplayer" class="md-nav__link md-nav__link--active">
+      Exoplayer
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#steps-to-implement" class="md-nav__link">
+    Steps to implement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-bare-minimmums" class="md-nav__link">
+    the Bare Minimmums.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extras" class="md-nav__link">
+    Extras
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exo-resources" class="md-nav__link">
+    exo resources :
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-exo-player-resources" class="md-nav__link">
+    non exo player resources
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-2" type="checkbox" id="nav-5-2-2">
+    
+    <label class="md-nav__link" for="nav-5-2-2">
+      Misc
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-2-2">
+        Misc
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../enums_and_intDefs/" title="Enums and @IntDefs" class="md-nav__link">
+      Enums and @IntDefs
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3" type="checkbox" id="nav-5-3">
+    
+    <label class="md-nav__link" for="nav-5-3">
+      Web
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-3">
+        Web
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-3-1" type="checkbox" id="nav-5-3-1">
+    
+    <label class="md-nav__link" for="nav-5-3-1">
+      Mkdocs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-5-3-1">
+        Mkdocs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../web/basic_syntax/" title="Basic Syntax" class="md-nav__link">
+      Basic Syntax
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#steps-to-implement" class="md-nav__link">
+    Steps to implement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-bare-minimmums" class="md-nav__link">
+    the Bare Minimmums.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extras" class="md-nav__link">
+    Extras
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exo-resources" class="md-nav__link">
+    exo resources :
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-exo-player-resources" class="md-nav__link">
+    non exo player resources
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="exoplayer">Exoplayer<a class="headerlink" href="#exoplayer" title="Permanent link">#</a></h1>
+<p>17/9/19  </p>
+<p>A good video player library for implementing A decent video player in your app, coz the other option of video_view from the default android sdk is less useful</p>
+<h2 id="steps-to-implement">Steps to implement<a class="headerlink" href="#steps-to-implement" title="Permanent link">#</a></h2>
+<ol>
+<li>Add Exoplayer library : Which is actually a group of 6-7 individual libraries having a jillion files.</li>
+</ol>
+<pre class="codehilite"><code class="linenums">    implementation 'com.google.android.exoplayer:exoplayer:2.10.4'</code></pre>
+
+
+<p>adding this would add fucking <a href="../exoplayer_classes/">800 classes</a> of this massive library. So let us see what it has to offer.  </p>
+<p><strong>Some basic Details.</strong><br />
+The library has the following modules. Adding a dependency to the full ExoPlayer library is equivalent to adding dependencies on all of the library modules individually:  </p>
+<ul>
+<li>exoplayer-core: Core functionality (required).</li>
+<li>exoplayer-dash: Support for DASH content.</li>
+<li>exoplayer-hls: Support for HLS content.</li>
+<li>exoplayer-smoothstreaming: Support for SmoothStreaming content.</li>
+<li>exoplayer-ui: UI components and resources for use with ExoPlayer.    </li>
+</ul>
+<p>In addition to library modules, ExoPlayer has multiple extension modules that depend on external libraries to provide additional functionality. Browse the extensions directory(https://github.com/google/ExoPlayer/tree/release-v2/extensions/) and their individual READMEs for details.
+Also java 8 support is compulsory for this library. </p>
+<h2 id="the-bare-minimmums">the Bare Minimmums.<a class="headerlink" href="#the-bare-minimmums" title="Permanent link">#</a></h2>
+<p>The smallest code that we need to </p>
+<pre class="codehilite"><code class="language-java linenums">     protected void onCreate(Bundle savedInstanceState) {
+        ...
+
+        Context ctx =this;
+        String CONTENT_URL = &quot;https://www.radiantmediaplayer.com/media/bbb-360p.mp4&quot;;
+        int playerID=R.id.pv_main;
+        int appNameStringRes = R.string.app_name;
+        startPlayingVideo(this,CONTENT_URL,playerID,appNameStringRes);
+
+
+    }
+
+    //
+    private void startPlayingVideo(Context ctx , String CONTENT_URL, int playerID, String appNameRes) {
+
+        PlayerView pvMain = ctx.findViewById(playerID);
+
+        //BandwidthMeter bandwidthMeter = new DefaultBandwidthMeter();
+        //TrackSelection.Factory videoTrackSelectionFactory = new AdaptiveTrackSelection.Factory(bandwidthMeter);        
+        //TrackSelector trackSelectorDef = new DefaultTrackSelector(videoTrackSelectionFactory);
+        TrackSelector trackSelectorDef = new DefaultTrackSelector();
+
+        SimpleExoPlayer absPlayerInternal = ExoPlayerFactory.newSimpleInstance(ctx, trackSelectorDef);
+
+        String userAgent = Util.getUserAgent(ctx, ctx.getString(appNameRes));
+
+        DefaultDataSourceFactory defdataSourceFactory = new DefaultDataSourceFactory(ctx,userAgent);
+        Uri uriOfContentUrl = Uri.parse(CONTENT_URL);
+        MediaSource mediaSource = new ProgressiveMediaSource.Factory(defdataSourceFactory).createMediaSource(uriOfContentUrl);
+
+        absPlayerInternal.prepare(mediaSource);
+        absPlayerInternal.setPlayWhenReady(true);
+
+        pvMain.setPlayer(absPlayerInternal);
+
+    }
+
+    private void stopPlayer(PlayerView pv,SimpleExoPlayer absPlayer){
+        pv.setPlayer(null);
+        absPlayer.release();
+        absPlayer = null;
+    }</code></pre>
+
+
+<p>How this works?<br />
+- We add a <code>PlayerView</code> widget in our xml and refer its instance in java. 
+- Then we attach an instance of <code>SimpleExoPlayer</code> to it , which will handle all downloading, decoding and rendering of video.  </p>
+<p><strong>In More Details, but with a tiny off topic context:</strong>   </p>
+<p>Suppose I am the creator of baby shark video song. I have made this large 48 mb sized HD, bluray video and uploaded it to my fast, responsive,hypothetical aws server.<br />
+I want the an app which is able to fetch this video into user's mobile without downloading it on their mobiles.  </p>
+<p>This is what I call <strong>static streaming</strong> . <strong><em>The video player is supposed to download some small chunks(Say, 2-12 second of a video at a time) of video one by one, at real time and show it to the users on the spot.</em></strong>  </p>
+<p><strong>But</strong> The biggest problem with streaming is connectivity. Their are mobile users with super fast internet speeds, users with fluctuating speeds and users with terribly ugly internet speeds. Even though a 6 sec HD video would be just 700-800 KB data, it might take 4-5 seconds for a user with poor connection.  </p>
+<p>So exo player has this <code>TrackSelector</code> class, that is  responsible for <strong>choosing which file chunks to download based on perceived bandwidth changes.</strong><br />
+So, for eg, if a high quality chunk would take too long to download, the TrackSelector will choose something of lower quality to show the user. And since each chunk is usually about 2 to 12 seconds long, it’s not  bad if the user gets a lower quality chunk of media once in while for the benefit of a smooth experience.
+It Uses <code>BandwidthMeter</code> class to get user's current bandwidth speeds  and a bunch of  other classes nd factories to create different tracks of video stream chuncks or packets of different sizes and qualities.
+(Later we will expand more on this: what are tracks, how tracks are created, track selection and creators, How it interacts with <code>absPlayerInstance</code> etc )</p>
+<blockquote>
+<p><I><B><U>So, to summarise, TrackSelector basically makes a setting in our exoplayer environment to download either  high quality HD packets(i.e a complete packet) or low quality 144p or 360p packets(or optimised/compressed/low quality version of a packet) from a stream usually on the basis of user's Internet Connection Bandwidth and/or other factors</B></U></I>  </p>
+</blockquote>
+<hr />
+<p>Using this track selector we can create an almost ready to run ExoPlayer instance. Let's look into <strong><code>SimpleExoPlayer</code></strong>.  </p>
+<p>At the core of the ExoPlayer library is the <strong><code>Player</code></strong> interface. This is the most powerful interface as it has definations for functions like:  </p>
+<ul>
+<li><code>isPlayingAd()</code>: weather the player is playing an ad or not.  </li>
+<li><code>getCurrentAdGroupIndex()</code> : index of current ad group(if ad is being played)</li>
+<li><code>getCurrentAdIndexInAdGroup()</code> : index of current ad in current ad group(if ad is being played)  </li>
+<li><code>getContentDuration()</code> : returns either the total duration of contents(+ the ads) or <code>C.TIME_UNSET</code> (a constant indicating remaining time is unknown) </li>
+<li><code>getContentPosition()</code> : position of content from where it will be resumed playing after ads are finished. (if ads aren't playing, will simply return same as <code>getPosition()</code>)<br />
+-<code>getContentBufferedPosition()</code> : returns an estimate of the content position in the current content window up to which data is buffered, in milliseconds.(if ads aren't playing, will simply return same as <code>getBufferedPosition()</code>)  </li>
+<li>get/setVolume()</li>
+<li>getAudioComponent(),getVideoComponent(),MetaDataComponent() // not exactly what you are thinking</li>
+<li>add/remove audio/videoListener</li>
+<li>addEventListener(),addErrorListener</li>
+<li>setPlayWhenRead()/ setRepeatMode()/ seekTo()/ stop()/reset()/ isLoading()/release()</li>
+<li>getCurrentTrackGroups/getTrackSelections()/geTCurrentManifest()</li>
+<li>setPlayBackParams() //like speed/pith  </li>
+</ul>
+<p>Instances can be created through ExoPlayerFactory class.  SimpleExoPlayer instance is a class which implements Player functions. ExoPlayer exposes traditional high-level media player functionality such as getAudioFormat, getCurrentPositon, getDuration, setVolume, seekTo, setPlayWhenReady, stop and much more. Just like I have mentioned before ExoPlayer uses many components to achieve its modularity and customizability. It delegates work to components which have to be injected when we create and prepare an ExoPlayer instance.  </p>
+<p>The next part is specifying a <strong>MediaSource</strong>. We have assumed that their will be a video on some server that will be continuously sending us data some large chunks of data packages and our track selector and other libs will download small chuncks of it based on user bandwidth.  </p>
+<p>But there is something missing, something incomplete. How is this continuous stream coming?Where is it coming from? why is it coming automatically and continuously?When and how did it started coming? How is it forever running?Why isn't data getting wasted if packet downloading speed is so fast while streaming speed is slow?Can I listen to the packets being received/decoded/...(whatever are the stages before player starts to render it and user sees it)...?   </p>
+<p>These are good questions that will be obviously answered. But let's first work on our assumptions.
+1. Our first assumption is very correct: There <strong>IS</strong> some server that has our video loaded in it. So our first task would be to inform our app's video handling environment, i.e the exoplayer about it</p>
+<p>A {@link Factory} that produces {@link DefaultDataSource} instances that delegate to
+ * {@link DefaultHttpDataSource}s for non-file/asset/content URIs.</p>
+<p>Your choice of MediaSource is going to depend on the type of media you're trying to play.
+In this example, we're going to be playing an MP4, so we're going to use an <code>ProgressiveMediaSource</code> which supports formats  like MP4, MP3, Matroska, and so on.<br />
+If you wanted to play Dash or HLS or smooth streaming streams, then you would use the corresponding MediaSources for those different formats.  </p>
+<hr />
+<h2 id="extras">Extras<a class="headerlink" href="#extras" title="Permanent link">#</a></h2>
+<ul>
+<li>Why exoplayer does not support progress listener: https://github.com/google/ExoPlayer/issues/2090 <blockquote>
+<blockquote>
+<p>logically it's the client that knows the points at which it wants a position update  </p>
+</blockquote>
+<p>What if the client just wants to listen to the video current position updates? Constantly checking getCurrentPosition (e.g. with the help of Timer().scheduleAtFixedRate) is a very inefficient solution. IMHO, it would be great if ExoPlayer had a specialized method for this, somethings like setCurrentPositionListener which the developers could use to get notified about the video position changes.  </p>
+<p>Since the player manages its own getCurrentPosition property it already knows when to emit onPositionChanged events. The client can only use the polling technique for this.  </p>
+</blockquote>
+</li>
+</ul>
+<pre class="codehilite"><code class="language-java linenums">/**
+// TrackSelector class
+ * The component of an {@link ExoPlayer} responsible for selecting tracks to be consumed by each of
+ * the player's {@link Renderer}s. The {@link DefaultTrackSelector} implementation should be
+ * suitable for most use cases.
+ *
+ * &lt;h3&gt;Interactions with the player&lt;/h3&gt;
+ *
+ * The following interactions occur between the player and its track selector during playback.
+ *
+ * &lt;p&gt;
+ *
+ * &lt;ul&gt;
+ *   &lt;li&gt;When the player is created it will initialize the track selector by calling {@link
+ *       #init(InvalidationListener, BandwidthMeter)}.
+ *   &lt;li&gt;When the player needs to make a track selection it will call {@link
+ *       #selectTracks(RendererCapabilities[], TrackGroupArray, MediaPeriodId, Timeline)}. This
+ *       typically occurs at the start of playback, when the player starts to buffer a new period of
+ *       the media being played, and when the track selector invalidates its previous selections.
+ *   &lt;li&gt;The player may perform a track selection well in advance of the selected tracks becoming
+ *       active, where active is defined to mean that the renderers are actually consuming media
+ *       corresponding to the selection that was made. For example when playing media containing
+ *       multiple periods, the track selection for a period is made when the player starts to buffer
+ *       that period. Hence if the player's buffering policy is to maintain a 30 second buffer, the
+ *       selection will occur approximately 30 seconds in advance of it becoming active. In fact the
+ *       selection may never become active, for example if the user seeks to some other period of
+ *       the media during the 30 second gap. The player indicates to the track selector when a
+ *       selection it has previously made becomes active by calling {@link
+ *       #onSelectionActivated(Object)}.
+ *   &lt;li&gt;If the track selector wishes to indicate to the player that selections it has previously
+ *       made are invalid, it can do so by calling {@link
+ *       InvalidationListener#onTrackSelectionsInvalidated()} on the {@link InvalidationListener}
+ *       that was passed to {@link #init(InvalidationListener, BandwidthMeter)}. A track selector
+ *       may wish to do this if its configuration has changed, for example if it now wishes to
+ *       prefer audio tracks in a particular language. This will trigger the player to make new
+ *       track selections. Note that the player will have to re-buffer in the case that the new
+ *       track selection for the currently playing period differs from the one that was invalidated.
+ * &lt;/ul&gt;
+ *
+ * &lt;h3&gt;Renderer configuration&lt;/h3&gt;
+ *
+ * The {@link TrackSelectorResult} returned by {@link #selectTracks(RendererCapabilities[],
+ * TrackGroupArray, MediaPeriodId, Timeline)} contains not only {@link TrackSelection}s for each
+ * renderer, but also {@link RendererConfiguration}s defining configuration parameters that the
+ * renderers should apply when consuming the corresponding media. Whilst it may seem counter-
+ * intuitive for a track selector to also specify renderer configuration information, in practice
+ * the two are tightly bound together. It may only be possible to play a certain combination tracks
+ * if the renderers are configured in a particular way. Equally, it may only be possible to
+ * configure renderers in a particular way if certain tracks are selected. Hence it makes sense to
+ * determined the track selection and corresponding renderer configurations in a single step.
+ *
+ * &lt;h3&gt;Threading model&lt;/h3&gt;
+ *
+ * All calls made by the player into the track selector are on the player's internal playback
+ * thread. The track selector may call {@link InvalidationListener#onTrackSelectionsInvalidated()}
+ * from any thread.
+ */
+public abstract class TrackSelector {
+}</code></pre>
+
+
+<p><strong>ProgressiveMediaSource(a class)</strong> extends <strong>BaseMediaSource(a class)</strong> extends <strong>Media Source(an interface)</strong></p>
+<hr />
+<pre class="codehilite"><code class="language-java linenums">/**
+ * Provides one period that loads data from a {@link Uri} and extracted using an {@link Extractor}.
+ *
+ * &lt;p&gt;If the possible input stream container formats are known, pass a factory that instantiates
+ * extractors for them to the constructor. Otherwise, pass a {@link DefaultExtractorsFactory} to use
+ * the default extractors. When reading a new stream, the first {@link Extractor} in the array of
+ * extractors created by the factory that returns {@code true} from {@link Extractor#sniff} will be
+ * used to extract samples from the input stream.
+ *
+ * &lt;p&gt;Note that the built-in extractor for FLV streams does not support seeking.
+ */
+public final class ProgressiveMediaSource extends BaseMediaSource
+    implements ProgressiveMediaPeriod.Listener {
+
+
+  /* Factory for creating instances of ProgressiveMediaSource class, using the extractors provided by {DefaultExtractorsFactory}  (OR something else too, idk). */
+  public static final class Factory implements AdsMediaSource.MediaSourceFactory {
+      ...
+      ...
+
+    public Factory(DataSource.Factory dataSourceFactory) {
+      this(dataSourceFactory, new DefaultExtractorsFactory());
+    }
+....
+}    </code></pre>
+
+
+<pre class="codehilite"><code class="language-java linenums">/**
+ * Base {@link MediaSource} implementation to handle parallel reuse and to keep a list of {@link
+ * MediaSourceEventListener}s.
+ *
+ * &lt;p&gt;Whenever an implementing subclass needs to provide a new timeline and/or manifest, it must
+ * call {@link #refreshSourceInfo(Timeline, Object)} to notify all listeners.
+ */
+public abstract class BaseMediaSource implements MediaSource {
+
+  private final ArrayList&lt;SourceInfoRefreshListener&gt; sourceInfoListeners;
+  private final MediaSourceEventListener.EventDispatcher eventDispatcher;
+
+  @Nullable private Looper looper;
+  @Nullable private Timeline timeline;
+  @Nullable private Object manifest;
+
+  public BaseMediaSource() {
+    sourceInfoListeners = new ArrayList&lt;&gt;(/* initialCapacity= */ 1);
+    eventDispatcher = new MediaSourceEventListener.EventDispatcher();
+  }</code></pre>
+
+
+<pre class="codehilite"><code class="language-java linenums">/**
+ * Defines and provides media to be played by an {@link com.google.android.exoplayer2.ExoPlayer}. A
+ * MediaSource has two main responsibilities:
+ *
+ * &lt;ul&gt;
+ *   &lt;li&gt;To provide the player with a {@link Timeline} defining the structure of its media, and to
+ *       provide a new timeline whenever the structure of the media changes. The MediaSource
+ *       provides these timelines by calling {@link SourceInfoRefreshListener#onSourceInfoRefreshed}
+ *       on the {@link SourceInfoRefreshListener}s passed to {@link
+ *       #prepareSource(SourceInfoRefreshListener, TransferListener)}.
+ *   &lt;li&gt;To provide {@link MediaPeriod} instances for the periods in its timeline. MediaPeriods are
+ *       obtained by calling {@link #createPeriod(MediaPeriodId, Allocator, long)}, and provide a
+ *       way for the player to load and read the media.
+ * &lt;/ul&gt;
+ *
+ * All methods are called on the player's internal playback thread, as described in the {@link
+ * com.google.android.exoplayer2.ExoPlayer} Javadoc. They should not be called directly from
+ * application code. Instances can be re-used, but only for one {@link
+ * com.google.android.exoplayer2.ExoPlayer} instance simultaneously.
+ */
+public interface MediaSource {
+
+  /** Listener for source events. */
+  interface SourceInfoRefreshListener {
+
+    /**
+...
+} </code></pre>
+
+
+<h3 id="exo-resources">exo resources :<a class="headerlink" href="#exo-resources" title="Permanent link">#</a></h3>
+<ol>
+<li>https://android.jlelse.eu/streaming-video-on-android-using-exoplayer-3087d604095 This guy implements basic streaming but has some content that i haven't yet read.</li>
+<li>https://medium.com/@pawankgupta.se/live-video-streaming-using-exoplayer-2-x-41cc7f9301d6 basic video rendering using HLS  </li>
+<li>http://www.tothenew.com/blog/playing-different-videos-with-exo-player-in-android-tv/  basic exoplayer. might have something new.  </li>
+<li>https://blog.hotstar.com/when-hotstar-met-exoplayer-5b9ea500bd0 : good theory regarding exo</li>
+<li>https://github.com/Tubitv/TubiPlayer : tubi player : a player build around exoplayer</li>
+</ol>
+<h3 id="non-exo-player-resources">non exo player resources<a class="headerlink" href="#non-exo-player-resources" title="Permanent link">#</a></h3>
+<p>Good article on how video straming woks :<br />
+  1. https://www.swipetips.com/android-video-streaming-videoview-tutorial/ video view streaming
+  1. https://instagram-engineering.com/improving-video-playback-on-android-2f6c6a0058d
+  2. https://medium.com/@onix_systems/rtmp-protocol-enable-instant-video-streaming-for-android-apps-44cd9de6f339<br />
+  3. http://www.tothenew.com/blog/adaptive-video-streaming-hls/ very good theory
+  3. https://medium.com/p/cddc0b1bf764/responses/show (bad , promotional content, but good theory) 
+  4. https://medium.com/@judeosby/creating-a-video-streaming-app-in-android-using-mvvm-rxjava-pagination-library-and-the-normal-e7b120653d19  (good, practical one with github/open source use cases uses deprecated bvp player : https://github.com/halilozercan/BetterVideoPlayer)  </p>
+<ol>
+<li>https://www.streamingmedia.com/Default.aspx website on streaming.</li>
+<li>https://imagen.io/resources/what-are-svod-tvod-avod/ : VOD business  </li>
+<li>jw player : they have implemented everything we want.</li>
+</ol>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../blog_summary/" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Introduction
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../enums_and_intDefs/" title="Enums and @IntDefs" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Enums and @IntDefs
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2019 <a href="https://www.linkedin.com/in/anshsachdevaprofessional/">Ansh Sachdeva</a>
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/root-ansh" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/root_ansh" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://linkedin.com/in/anshsachdevaprofessional/" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.c648116f.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+    
+  </body>
+</html>
