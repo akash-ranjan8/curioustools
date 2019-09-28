@@ -47,16 +47,6 @@ theme:
 #extra_css:
 #    - 'stylesheets/extra.css' # for disabling toc # not working
 
-markdown_extensions:
-    - admonition  # fancy error/note blocks
-    - codehilite: # cool code blocks with numbers/ nested code tabs(like that of google java/kotlin!!!:D)
-        linenums: true
-        
-    - meta
-    - toc:
-        permalink: "#"
-    
-   
     
 markdown_extensions:
     # originals : i didn't knew 2 shits about original
