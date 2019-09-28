@@ -5,7 +5,7 @@ site_url: https://root-ansh.github.io/curioustools/  # used for using local imag
 
 #Header
 #repo_name: 'root-ansh/curioustools'
-#repo_url: 'https://github.com/root-ansh/curioustools'
+repo_url: 'https://github.com/root-ansh/curioustools'
 #tabs:{a,b,c} X # Tabs are generated automatically using nav's topmost division and theme's  extras -tabs: true feature
 
 #Footer
