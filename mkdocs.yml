@@ -53,29 +53,21 @@ markdown_extensions:
     - meta
     - toc:
         permalink: "#"
+        
+    #- smarty
     
-    #- extra:   # adds disquos comment section on the bottom of each page
-        #disqus: 'your-shortname' # todo, not working.
-    
-    # ---- all very useless pymdownx extensions that i need to read more, but mostly are useless---
-    #- pymdownx.arithmatex
+    #- footnotes
+    #- meta
     #- pymdownx.betterem:
     #    smart_enable: all
+        
     #- pymdownx.caret
-    #- pymdownx.critic
-    #- pymdownx.details
-    #- pymdownx.emoji:
-    #    emoji_generator: !!python/name:pymdownx.emoji.to_svg
     #- pymdownx.inlinehilite
     #- pymdownx.magiclink
-    #- pymdownx.mark
     #- pymdownx.smartsymbols
     #- pymdownx.superfences
-    #- pymdownx.tasklist:
-    #    custom_checkbox: true
-    #- pymdownx.tilde 
-
-
+    #- tables
+        
 
 nav:
     - About Me: index.md
@@ -92,9 +84,14 @@ nav:
 
     - Blogs:
         - Introduction : tab_blogs/blog_summary.md
+        - Android : 
+            - tab_blogs/android/world_of_videos.md
+            - Misc:    
+                - tab_blogs/android/enums_and_intDefs.md
         - Web:
-            Mkdocs:
+            - Mkdocs:
                 - tab_blogs/web/basic_syntax.md
             
-            
+        #- Misc:
+        
 
