@@ -491,7 +491,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#exo-resources" class="md-nav__link">
+  <a href="#exo-resources-" class="md-nav__link">
     exo resources :
   </a>
   
@@ -669,7 +669,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#exo-resources" class="md-nav__link">
+  <a href="#exo-resources-" class="md-nav__link">
     exo resources :
   </a>
   
@@ -709,12 +709,11 @@
 <p>A good video player library for implementing A decent video player in your app, coz the other option of video_view from the default android sdk is less useful</p>
 <h2 id="steps-to-implement">Steps to implement<a class="headerlink" href="#steps-to-implement" title="Permanent link">#</a></h2>
 <ol>
-<li>Add Exoplayer library : Which is actually a group of 6-7 individual libraries having a jillion files.</li>
+<li>Add Exoplayer library : Which is actually a group of 6-7 individual libraries having a jillion files.
+<pre class="codehilite"><code>    implementation 'com.google.android.exoplayer:exoplayer:2.10.4'
+</code></pre>
+adding this would add fucking <a href="../exoplayer_classes/">800 classes</a> of this massive library. So let us see what it has to offer.  </li>
 </ol>
-<pre class="codehilite"><code class="linenums">    implementation 'com.google.android.exoplayer:exoplayer:2.10.4'</code></pre>
-
-
-<p>adding this would add fucking <a href="../exoplayer_classes/">800 classes</a> of this massive library. So let us see what it has to offer.  </p>
 <p><strong>Some basic Details.</strong><br />
 The library has the following modules. Adding a dependency to the full ExoPlayer library is equivalent to adding dependencies on all of the library modules individually:  </p>
 <ul>
@@ -727,12 +726,13 @@ The library has the following modules. Adding a dependency to the full ExoPlayer
 <p>In addition to library modules, ExoPlayer has multiple extension modules that depend on external libraries to provide additional functionality. Browse the extensions directory(https://github.com/google/ExoPlayer/tree/release-v2/extensions/) and their individual READMEs for details.
 Also java 8 support is compulsory for this library. </p>
 <h2 id="the-bare-minimmums">the Bare Minimmums.<a class="headerlink" href="#the-bare-minimmums" title="Permanent link">#</a></h2>
-<p>The smallest code that we need to </p>
-<pre class="codehilite"><code class="language-java linenums">     protected void onCreate(Bundle savedInstanceState) {
+<p>The smallest code that we need to 
+<pre class="codehilite"><code class="language-java">
+     protected void onCreate(Bundle savedInstanceState) {
         ...
 
         Context ctx =this;
-        String CONTENT_URL = &quot;https://www.radiantmediaplayer.com/media/bbb-360p.mp4&quot;;
+        String CONTENT_URL = "https://www.radiantmediaplayer.com/media/bbb-360p.mp4";
         int playerID=R.id.pv_main;
         int appNameStringRes = R.string.app_name;
         startPlayingVideo(this,CONTENT_URL,playerID,appNameStringRes);
@@ -744,23 +744,23 @@ Also java 8 support is compulsory for this library. </p>
     private void startPlayingVideo(Context ctx , String CONTENT_URL, int playerID, String appNameRes) {
 
         PlayerView pvMain = ctx.findViewById(playerID);
-
+        
         //BandwidthMeter bandwidthMeter = new DefaultBandwidthMeter();
         //TrackSelection.Factory videoTrackSelectionFactory = new AdaptiveTrackSelection.Factory(bandwidthMeter);        
         //TrackSelector trackSelectorDef = new DefaultTrackSelector(videoTrackSelectionFactory);
         TrackSelector trackSelectorDef = new DefaultTrackSelector();
 
         SimpleExoPlayer absPlayerInternal = ExoPlayerFactory.newSimpleInstance(ctx, trackSelectorDef);
-
+        
         String userAgent = Util.getUserAgent(ctx, ctx.getString(appNameRes));
-
+        
         DefaultDataSourceFactory defdataSourceFactory = new DefaultDataSourceFactory(ctx,userAgent);
         Uri uriOfContentUrl = Uri.parse(CONTENT_URL);
         MediaSource mediaSource = new ProgressiveMediaSource.Factory(defdataSourceFactory).createMediaSource(uriOfContentUrl);
-
+        
         absPlayerInternal.prepare(mediaSource);
         absPlayerInternal.setPlayWhenReady(true);
-
+        
         pvMain.setPlayer(absPlayerInternal);
 
     }
@@ -770,15 +770,13 @@ Also java 8 support is compulsory for this library. </p>
         absPlayer.release();
         absPlayer = null;
     }</code></pre>
-
-
-<p>How this works?<br />
+How this works?<br />
 - We add a <code>PlayerView</code> widget in our xml and refer its instance in java. 
 - Then we attach an instance of <code>SimpleExoPlayer</code> to it , which will handle all downloading, decoding and rendering of video.  </p>
 <p><strong>In More Details, but with a tiny off topic context:</strong>   </p>
 <p>Suppose I am the creator of baby shark video song. I have made this large 48 mb sized HD, bluray video and uploaded it to my fast, responsive,hypothetical aws server.<br />
 I want the an app which is able to fetch this video into user's mobile without downloading it on their mobiles.  </p>
-<p>This is what I call <strong>static streaming</strong> . <strong><em>The video player is supposed to download some small chunks(Say, 2-12 second of a video at a time) of video one by one, at real time and show it to the users on the spot.</em></strong>  </p>
+<p>This is what I call <strong>static streaming** . **<em>The video player is supposed to download some small chunks(Say, 2-12 second of a video at a time) of video one by one, at real time and show it to the users on the spot.</em></strong>  </p>
 <p><strong>But</strong> The biggest problem with streaming is connectivity. Their are mobile users with super fast internet speeds, users with fluctuating speeds and users with terribly ugly internet speeds. Even though a 6 sec HD video would be just 700-800 KB data, it might take 4-5 seconds for a user with poor connection.  </p>
 <p>So exo player has this <code>TrackSelector</code> class, that is  responsible for <strong>choosing which file chunks to download based on perceived bandwidth changes.</strong><br />
 So, for eg, if a high quality chunk would take too long to download, the TrackSelector will choose something of lower quality to show the user. And since each chunk is usually about 2 to 12 seconds long, it’s not  bad if the user gets a lower quality chunk of media once in while for the benefit of a smooth experience.
@@ -807,7 +805,7 @@ It Uses <code>BandwidthMeter</code> class to get user's current bandwidth speeds
 </ul>
 <p>Instances can be created through ExoPlayerFactory class.  SimpleExoPlayer instance is a class which implements Player functions. ExoPlayer exposes traditional high-level media player functionality such as getAudioFormat, getCurrentPositon, getDuration, setVolume, seekTo, setPlayWhenReady, stop and much more. Just like I have mentioned before ExoPlayer uses many components to achieve its modularity and customizability. It delegates work to components which have to be injected when we create and prepare an ExoPlayer instance.  </p>
 <p>The next part is specifying a <strong>MediaSource</strong>. We have assumed that their will be a video on some server that will be continuously sending us data some large chunks of data packages and our track selector and other libs will download small chuncks of it based on user bandwidth.  </p>
-<p>But there is something missing, something incomplete. How is this continuous stream coming?Where is it coming from? why is it coming automatically and continuously?When and how did it started coming? How is it forever running?Why isn't data getting wasted if packet downloading speed is so fast while streaming speed is slow?Can I listen to the packets being received/decoded/...(whatever are the stages before player starts to render it and user sees it)...?   </p>
+<p>But there is something missing, something incomplete. How is this continuous stream coming?Where is it coming from? why is it coming automatically and continuously?When and how did it started coming? How is it forever running?Why isn't data getting wasted if packet downloading speed is so fast while streaming speed is slow?Can I listen to the packets being received/decoded/&hellip;(whatever are the stages before player starts to render it and user sees it)&hellip;?   </p>
 <p>These are good questions that will be obviously answered. But let's first work on our assumptions.
 1. Our first assumption is very correct: There <strong>IS</strong> some server that has our video loaded in it. So our first task would be to inform our app's video handling environment, i.e the exoplayer about it</p>
 <p>A {@link Factory} that produces {@link DefaultDataSource} instances that delegate to
@@ -827,7 +825,7 @@ If you wanted to play Dash or HLS or smooth streaming streams, then you would us
 </blockquote>
 </li>
 </ul>
-<pre class="codehilite"><code class="language-java linenums">/**
+<pre class="codehilite"><code class="language-java">/**
 // TrackSelector class
  * The component of an {@link ExoPlayer} responsible for selecting tracks to be consumed by each of
  * the player's {@link Renderer}s. The {@link DefaultTrackSelector} implementation should be
@@ -887,10 +885,10 @@ If you wanted to play Dash or HLS or smooth streaming streams, then you would us
 public abstract class TrackSelector {
 }</code></pre>
 
-
 <p><strong>ProgressiveMediaSource(a class)</strong> extends <strong>BaseMediaSource(a class)</strong> extends <strong>Media Source(an interface)</strong></p>
 <hr />
-<pre class="codehilite"><code class="language-java linenums">/**
+<pre class="codehilite"><code class="language-java">
+/**
  * Provides one period that loads data from a {@link Uri} and extracted using an {@link Extractor}.
  *
  * &lt;p&gt;If the possible input stream container formats are known, pass a factory that instantiates
@@ -909,15 +907,16 @@ public final class ProgressiveMediaSource extends BaseMediaSource
   public static final class Factory implements AdsMediaSource.MediaSourceFactory {
       ...
       ...
-
+    
     public Factory(DataSource.Factory dataSourceFactory) {
       this(dataSourceFactory, new DefaultExtractorsFactory());
     }
 ....
-}    </code></pre>
+}    
+</code></pre>
 
-
-<pre class="codehilite"><code class="language-java linenums">/**
+<pre class="codehilite"><code class="language-java">
+/**
  * Base {@link MediaSource} implementation to handle parallel reuse and to keep a list of {@link
  * MediaSourceEventListener}s.
  *
@@ -936,10 +935,12 @@ public abstract class BaseMediaSource implements MediaSource {
   public BaseMediaSource() {
     sourceInfoListeners = new ArrayList&lt;&gt;(/* initialCapacity= */ 1);
     eventDispatcher = new MediaSourceEventListener.EventDispatcher();
-  }</code></pre>
+  }
 
+</code></pre>
 
-<pre class="codehilite"><code class="language-java linenums">/**
+<pre class="codehilite"><code class="language-java">
+/**
  * Defines and provides media to be played by an {@link com.google.android.exoplayer2.ExoPlayer}. A
  * MediaSource has two main responsibilities:
  *
@@ -968,8 +969,7 @@ public interface MediaSource {
 ...
 } </code></pre>
 
-
-<h3 id="exo-resources">exo resources :<a class="headerlink" href="#exo-resources" title="Permanent link">#</a></h3>
+<h3 id="exo-resources-">exo resources :<a class="headerlink" href="#exo-resources-" title="Permanent link">#</a></h3>
 <ol>
 <li>https://android.jlelse.eu/streaming-video-on-android-using-exoplayer-3087d604095 This guy implements basic streaming but has some content that i haven't yet read.</li>
 <li>https://medium.com/@pawankgupta.se/live-video-streaming-using-exoplayer-2-x-41cc7f9301d6 basic video rendering using HLS  </li>

@@ -645,8 +645,9 @@ But they are usually considered a bad practise in android because Enums often re
 <h2 id="enter-intdef">Enter <code>IntDef</code><a class="headerlink" href="#enter-intdef" title="Permanent link">#</a></h2>
 <p><code>@IntDef</code> is a way of replacing an integer enum where there's a parameter that should only
  accept explicit int values.We can use IntDef to ensure that the value is one of the expected values
- by adding this annotation. For eg:  </p>
-<pre class="codehilite"><code class="language-java linenums">public class example {
+ by adding this annotation. For eg:<br />
+<pre class="codehilite"><code class="language-java">
+public class example {
    @IntDef( {Type.TYPE_MUSIC,Type.TYPE_PHOTO,Type.TYPE_TEXT})
     public  @interface  Type{
         int TYPE_MUSIC = 0;
@@ -658,9 +659,7 @@ But they are usually considered a bad practise in android because Enums often re
   public void getItemType(@Type int itemType) {
     int res = itemType;
   }
-}</code></pre>
-
-
+}</code></pre></p>
 <p>The function will allow user to pass any integer value, but will give a lint warning if value is not
 <code>Type.TYPE_MUSIC</code>,<code>Type.TYPE_PHOTO</code>or<code>Type.TYPE_TEXT</code>(yes, even if 0,21 or 42 are passed directly 
 too ).</p>
