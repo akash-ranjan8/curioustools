@@ -2,7 +2,7 @@
 # Hello.  
 <img 
     style="float:left;"
-    src="../a_index_images/logo.svg" 
+    src="/a_index_images/logo.svg" 
     alt="text"
     height="150"
     width="150"
@@ -30,19 +30,19 @@ My resume can be found [**here**](https://drive.google.com/file/d/185IHAjhCUS054
 </a>
 
 <a href="https://www.linkedin.com/in/anshsachdevaprofessional">
-    <img src="../a_index_images/linkedin.png" height="64" width="64" alt="linkedin">
+    <img src="/a_index_images/linkedin.png" height="64" width="64" alt="linkedin">
 </a>
 
 <a href="https://github.com/root-ansh">
-    <img src="../a_index_images/github.png" height="64" width="64" alt="github">
+    <img src="/a_index_images/github.png" height="64" width="64" alt="github">
 </a>
 
 <a href="https://medium.com/@anshsachdevaprofessional">
-    <img src="../a_index_images/medium.png" height="64" width="64" alt="medium">
+    <img src="/a_index_images/medium.png" height="64" width="64" alt="medium">
 </a>
 
 <a href="https://twitter.com/root_ansh">
-    <img src="../a_index_images/twitter.png" height="64" width="64" alt="gmail">
+    <img src="/a_index_images/twitter.png" height="64" width="64" alt="gmail">
 </a>
 </p>
 

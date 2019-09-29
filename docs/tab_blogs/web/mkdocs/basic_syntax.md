@@ -52,6 +52,11 @@ docs/
 
 like this : ![../img/logo.png](../img/logoxxx.png)
 
+[**except for index.md and its pictures, which are already in the root directory**( path 
+for index is docs/index.md and path for images used in index would be docs/img/picname.png
+)]
+
+
 ## Body copy
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras arcu libero,
