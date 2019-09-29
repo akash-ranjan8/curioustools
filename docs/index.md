@@ -26,7 +26,7 @@ My resume can be found [**here**](https://drive.google.com/file/d/185IHAjhCUS054
 
 <p>
 <a href="mailto:anshsachdevaprofessional@gmail.com">
-    <img src="../a_index_images/email.png" height="64" width="64" alt="gmail">
+    <img src="a_index_images/email.png" height="64" width="64" alt="gmail">
 </a>
 
 <a href="https://www.linkedin.com/in/anshsachdevaprofessional">
