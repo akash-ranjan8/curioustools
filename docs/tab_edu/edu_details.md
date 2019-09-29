@@ -38,19 +38,19 @@
 <div style='display:flex;flex-wrap:wrap;'>
 
     <div style="width:30%; margin-right:2%" align="center">
-		<img src="/img/scholarship_edugrad.png">
+		<img src="../img/scholarship_edugrad.png">
 		Winner of Edugrad Data Analytics Scholarship
 		
 	</div>
 	
     <div style="width:30%; margin-right:2%" align="center">
-		<img src="/img/scholarship_pytorch.png">
+		<img src="../img/scholarship_pytorch.png">
 		Reciepent of Google India Scholarship, First Round
 		
 	</div>
 	
     <div style="width:30%; margin-right:2%" align="center">
-		<img src="/img/scholarship_gis.png">
+		<img src="../img/scholarship_gis.png">
 		Reciepent of Facebook Pytorch Scholarship, First Round
 		
 	</div>
@@ -63,14 +63,14 @@
 <div style='display:flex;flex-wrap:wrap;'>
 
     <div style="width:48%; margin-right:2%" align="center">
-		<img src="/img/java_cb.jpg"><br>
+		<img src="../img/java_cb.jpg"><br>
 		Java Core Programming.<br>
 		Coding Blocks, Dwarka.
 		
 	</div>
 	
 	<div style="width:48%; margin-right:2%" align="center">
-		<img src="/img/app_dev_cb.jpg"><br>
+		<img src="../img/app_dev_cb.jpg"><br>
 		Android App Development Basics.<br>
 		Coding Blocks, Dwarka.
 		
