@@ -21,11 +21,6 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc></loc>
-     
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
      <loc>https://root-ansh.github.io/curioustools/tab_blogs/blog_summary/</loc>
      <lastmod>2019-09-29</lastmod>
      <changefreq>daily</changefreq>
@@ -43,6 +38,11 @@
     <url>
      <loc>https://root-ansh.github.io/curioustools/tab_blogs/web/basic_syntax/</loc>
      <lastmod>2019-09-29</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc></loc>
+     
      <changefreq>daily</changefreq>
     </url>
 </urlset>

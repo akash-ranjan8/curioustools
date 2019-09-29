@@ -333,8 +333,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../tab_edu/edu_details/" title="Introduction" class="md-nav__link">
-      Introduction
+    <a href="../../../tab_edu/edu_details/" title="Education Details" class="md-nav__link">
+      Education Details
     </a>
   </li>
 
@@ -369,8 +369,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../tab_work_exp/work_exp/" title="Introduction" class="md-nav__link">
-      Introduction
+    <a href="../../../tab_work_exp/work_exp/" title="Work Experience" class="md-nav__link">
+      Work Experience
     </a>
   </li>
 
@@ -405,20 +405,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../tab_projects/project_summary/" title="Introduction" class="md-nav__link">
-      Introduction
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../tab_projects/project_selfnotes.md" title="SelfNotes" class="md-nav__link">
-      SelfNotes
+    <a href="../../../tab_projects/project_summary/" title="Portfolio" class="md-nav__link">
+      Portfolio
     </a>
   </li>
 
@@ -537,7 +525,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#exo-resources-" class="md-nav__link">
+  <a href="#exo-resources" class="md-nav__link">
     exo resources :
   </a>
   
@@ -667,6 +655,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="https://www.medium.com/@anshsachdevaprofessional/"" title="Other Blogs⏏" class="md-nav__link">
+      Other Blogs⏏
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -715,7 +715,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#exo-resources-" class="md-nav__link">
+  <a href="#exo-resources" class="md-nav__link">
     exo resources :
   </a>
   
@@ -792,23 +792,23 @@ Also java 8 support is compulsory for this library. </p>
     private void startPlayingVideo(Context ctx , String CONTENT_URL, int playerID, String appNameRes) {
 
         PlayerView pvMain = ctx.findViewById(playerID);
-        
+
         //BandwidthMeter bandwidthMeter = new DefaultBandwidthMeter();
         //TrackSelection.Factory videoTrackSelectionFactory = new AdaptiveTrackSelection.Factory(bandwidthMeter);        
         //TrackSelector trackSelectorDef = new DefaultTrackSelector(videoTrackSelectionFactory);
         TrackSelector trackSelectorDef = new DefaultTrackSelector();
 
         SimpleExoPlayer absPlayerInternal = ExoPlayerFactory.newSimpleInstance(ctx, trackSelectorDef);
-        
+
         String userAgent = Util.getUserAgent(ctx, ctx.getString(appNameRes));
-        
+
         DefaultDataSourceFactory defdataSourceFactory = new DefaultDataSourceFactory(ctx,userAgent);
         Uri uriOfContentUrl = Uri.parse(CONTENT_URL);
         MediaSource mediaSource = new ProgressiveMediaSource.Factory(defdataSourceFactory).createMediaSource(uriOfContentUrl);
-        
+
         absPlayerInternal.prepare(mediaSource);
         absPlayerInternal.setPlayWhenReady(true);
-        
+
         pvMain.setPlayer(absPlayerInternal);
 
     }
@@ -824,7 +824,7 @@ How this works?<br />
 <p><strong>In More Details, but with a tiny off topic context:</strong>   </p>
 <p>Suppose I am the creator of baby shark video song. I have made this large 48 mb sized HD, bluray video and uploaded it to my fast, responsive,hypothetical aws server.<br />
 I want the an app which is able to fetch this video into user's mobile without downloading it on their mobiles.  </p>
-<p>This is what I call <strong>static streaming** . **<em>The video player is supposed to download some small chunks(Say, 2-12 second of a video at a time) of video one by one, at real time and show it to the users on the spot.</em></strong>  </p>
+<p>This is what I call <strong>static streaming</strong> . <strong><em>The video player is supposed to download some small chunks(Say, 2-12 second of a video at a time) of video one by one, at real time and show it to the users on the spot.</em></strong>  </p>
 <p><strong>But</strong> The biggest problem with streaming is connectivity. Their are mobile users with super fast internet speeds, users with fluctuating speeds and users with terribly ugly internet speeds. Even though a 6 sec HD video would be just 700-800 KB data, it might take 4-5 seconds for a user with poor connection.  </p>
 <p>So exo player has this <code>TrackSelector</code> class, that is  responsible for <strong>choosing which file chunks to download based on perceived bandwidth changes.</strong><br />
 So, for eg, if a high quality chunk would take too long to download, the TrackSelector will choose something of lower quality to show the user. And since each chunk is usually about 2 to 12 seconds long, it’s not  bad if the user gets a lower quality chunk of media once in while for the benefit of a smooth experience.
@@ -853,7 +853,7 @@ It Uses <code>BandwidthMeter</code> class to get user's current bandwidth speeds
 </ul>
 <p>Instances can be created through ExoPlayerFactory class.  SimpleExoPlayer instance is a class which implements Player functions. ExoPlayer exposes traditional high-level media player functionality such as getAudioFormat, getCurrentPositon, getDuration, setVolume, seekTo, setPlayWhenReady, stop and much more. Just like I have mentioned before ExoPlayer uses many components to achieve its modularity and customizability. It delegates work to components which have to be injected when we create and prepare an ExoPlayer instance.  </p>
 <p>The next part is specifying a <strong>MediaSource</strong>. We have assumed that their will be a video on some server that will be continuously sending us data some large chunks of data packages and our track selector and other libs will download small chuncks of it based on user bandwidth.  </p>
-<p>But there is something missing, something incomplete. How is this continuous stream coming?Where is it coming from? why is it coming automatically and continuously?When and how did it started coming? How is it forever running?Why isn't data getting wasted if packet downloading speed is so fast while streaming speed is slow?Can I listen to the packets being received/decoded/&hellip;(whatever are the stages before player starts to render it and user sees it)&hellip;?   </p>
+<p>But there is something missing, something incomplete. How is this continuous stream coming?Where is it coming from? why is it coming automatically and continuously?When and how did it started coming? How is it forever running?Why isn't data getting wasted if packet downloading speed is so fast while streaming speed is slow?Can I listen to the packets being received/decoded/...(whatever are the stages before player starts to render it and user sees it)...?   </p>
 <p>These are good questions that will be obviously answered. But let's first work on our assumptions.
 1. Our first assumption is very correct: There <strong>IS</strong> some server that has our video loaded in it. So our first task would be to inform our app's video handling environment, i.e the exoplayer about it</p>
 <p>A {@link Factory} that produces {@link DefaultDataSource} instances that delegate to
@@ -955,7 +955,7 @@ public final class ProgressiveMediaSource extends BaseMediaSource
   public static final class Factory implements AdsMediaSource.MediaSourceFactory {
       ...
       ...
-    
+
     public Factory(DataSource.Factory dataSourceFactory) {
       this(dataSourceFactory, new DefaultExtractorsFactory());
     }
@@ -1017,7 +1017,7 @@ public interface MediaSource {
 ...
 } </code></pre>
 
-<h3 id="exo-resources-">exo resources :<a class="headerlink" href="#exo-resources-" title="Permanent link">#</a></h3>
+<h3 id="exo-resources">exo resources :<a class="headerlink" href="#exo-resources" title="Permanent link">#</a></h3>
 <ol>
 <li>https://android.jlelse.eu/streaming-video-on-android-using-exoplayer-3087d604095 This guy implements basic streaming but has some content that i haven't yet read.</li>
 <li>https://medium.com/@pawankgupta.se/live-video-streaming-using-exoplayer-2-x-41cc7f9301d6 basic video rendering using HLS  </li>
