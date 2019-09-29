@@ -4,7 +4,7 @@
 shit here without caring much about anyone. You might not wanna read it)
 
 --- 
-### 24/9/19  
+### 29/9/19  
 SATURDAY! After an ass busting week of papers, i am happy to relax for sometime. 
 I didn't applied for leave for today at my office, they are gonna cut the salary, damn :/
 Also, fuck i didn't recieved pass for the devfest delhi :'( .  
@@ -34,3 +34,7 @@ Anyhoo, currently going with this mkdocs theme . did some refactoring in yml fil
 about to add some general articles.  
 
 ---
+
+### 30/9/19
+
+Gotta confess, didn't do much stuff. watched a lot of web series( currently it crows and futurama) . also checked into popup window and made an issue on prebid repo. would check into that later 
