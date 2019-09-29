@@ -8,7 +8,7 @@ But they are usually considered a bad practise in android because Enums often re
 `@IntDef` is a way of replacing an integer enum where there's a parameter that should only
  accept explicit int values.We can use IntDef to ensure that the value is one of the expected values
  by adding this annotation. For eg:  
-```java
+``` java
 
 public class example {
    @IntDef( {Type.TYPE_MUSIC,Type.TYPE_PHOTO,Type.TYPE_TEXT})
