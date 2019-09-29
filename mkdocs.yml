@@ -28,7 +28,7 @@ theme:
         accent: 'green'
         #links_color : 'green' #todo, this is not the correct solution
         
-    logo: img/logo/logo.svg
+    logo: assets/logo/logo.svg
     favicon: 'assets/images/favicon.ico'
 
     feature:
@@ -92,7 +92,7 @@ nav:
                 - tab_blogs/android/enums_and_intDefs.md
         - Web:
             - Mkdocs:
-                - tab_blogs/web/basic_syntax.md  
+                - tab_blogs/web/mkdocs/basic_syntax.md  
                 
         - Other Blogs⏏: https://www.medium.com/@anshsachdevaprofessional/"     
         

@@ -4,17 +4,54 @@
 image loaded from the web
 ![htttps://www.google.com](https://images.emojiterra.com/mozilla/512px/1f517.png)   
 
-image loaded from img/logo.png
-![](/img/logo.png)  
+image loaded from img/logo.png![pic](../../../a_blog_imgs/logo.png)  
  
  image loaded from the web with a link(uses HTML)
 [<img src="http://www.google.com.au/images/nav_logo7.png">](http://google.com/)  
 
 
 image loaded from img/logo.png with a link(uses HTML) 
-[<img src="/img/logo.png">](http://google.com/)  
+[<img src="../a_blog_imgs/logo.png">](http://google.com/)  
 
+
+if you are not seeing thisimage , well , simply put: if your blog resides in following 
+directory:
+```
+docs/
+ |
+ |----x/
+ |	|
+ |	|----y/
+ |	|  |
+ |	|  |
+ |	|  |---z/
+ |	|  |  |
+ |	|  |  |
+ |	|  |  |---myblog.md
+ |	|  |  |
+```
+ then you should create a folder `img` in the `z/` folder and add pics there and access it using
+ `.../img/imagename.png` . so your final structure will be:  
  
+```
+docs/
+ |
+ |----x/
+ |	|
+ |	|----y/
+ |	|  |
+ |	|  |
+ |	|  |---z/
+ |	|  |  |
+ |	|  |  |
+ |	|  |  |---img/
+ |	|  |  |  |-----imagename.png
+ |	|  |  |---myblog.md
+ |	|  |  |
+```
+
+like this : ![../img/logo.png](../img/logoxxx.png)
+
 ## Body copy
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras arcu libero,
