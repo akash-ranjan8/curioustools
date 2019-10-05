@@ -45,31 +45,31 @@ theme:
     
 # Extensions
 markdown_extensions:
-  - markdown.extensions.admonition
+  - markdown.extensions.admonition:
   - markdown.extensions.codehilite:
       guess_lang: false
-  - markdown.extensions.def_list
-  - markdown.extensions.footnotes
-  - markdown.extensions.meta
+  - markdown.extensions.def_list:
+  - markdown.extensions.footnotes:
+  - markdown.extensions.meta:
   - markdown.extensions.toc:
       permalink: "#"
-  - pymdownx.arithmatex
+  - pymdownx.arithmatex:
   - pymdownx.betterem:
       smart_enable: all
-  - pymdownx.caret
-  - pymdownx.critic
-  - pymdownx.details
+  - pymdownx.caret:
+  - pymdownx.critic:
+  - pymdownx.details:
   - pymdownx.emoji:
       emoji_generator: !!python/name:pymdownx.emoji.to_svg
-  - pymdownx.inlinehilite
-  - pymdownx.keys
+  - pymdownx.inlinehilite:
+  - pymdownx.keys:
   
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.superfences
+  - pymdownx.mark:
+  - pymdownx.smartsymbols:
+  - pymdownx.superfences:
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.tilde
+  - pymdownx.tilde:
 
 
 nav:
@@ -87,7 +87,10 @@ nav:
     - Blogs:
         - Introduction : tab_blogs/blog_summary.md
         - Android : 
-            - tab_blogs/android/world_of_videos.md
+            - VideoPlayer:
+                - tab_blogs/android/world_of_videos.md
+            - MobileAds:
+                - tab_blogs/android/mobile_ads_1.md
             - Misc:    
                 - tab_blogs/android/enums_and_intDefs.md
         - Web:
