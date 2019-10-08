@@ -2,47 +2,97 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://root-ansh.github.io/curioustools/</loc>
-     <lastmod>2019-10-06</lastmod>
+     <lastmod>2019-10-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://root-ansh.github.io/curioustools/tab_edu/edu_details/</loc>
-     <lastmod>2019-10-06</lastmod>
+     <lastmod>2019-10-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://root-ansh.github.io/curioustools/tab_work_exp/work_exp/</loc>
-     <lastmod>2019-10-06</lastmod>
+     <lastmod>2019-10-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://root-ansh.github.io/curioustools/tab_projects/project_summary/</loc>
-     <lastmod>2019-10-06</lastmod>
+     <lastmod>2019-10-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://root-ansh.github.io/curioustools/tab_blogs/blog_summary/</loc>
-     <lastmod>2019-10-06</lastmod>
+     <lastmod>2019-10-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://root-ansh.github.io/curioustools/tab_blogs/android/world_of_videos/</loc>
-     <lastmod>2019-10-06</lastmod>
+     <loc>https://root-ansh.github.io/curioustools/tab_blogs/android/basics/af1_the_architecture/</loc>
+     <lastmod>2019-10-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://root-ansh.github.io/curioustools/tab_blogs/android/basics/af2_parts_of_an_app/</loc>
+     <lastmod>2019-10-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://root-ansh.github.io/curioustools/tab_blogs/android/mobile_ads_1/</loc>
-     <lastmod>2019-10-06</lastmod>
+     <lastmod>2019-10-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://root-ansh.github.io/curioustools/tab_blogs/android/networking/networking_get_post_basics/</loc>
+     <lastmod>2019-10-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://root-ansh.github.io/curioustools/tab_blogs/android/networking/networking_get_post_native/</loc>
+     <lastmod>2019-10-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://root-ansh.github.io/curioustools/tab_blogs/android/networking/networking_get_post_volley/</loc>
+     <lastmod>2019-10-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://root-ansh.github.io/curioustools/tab_blogs/android/networking/networking_get_post_okhttp/</loc>
+     <lastmod>2019-10-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://root-ansh.github.io/curioustools/tab_blogs/android/networking/networking_get_post_gson/</loc>
+     <lastmod>2019-10-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://root-ansh.github.io/curioustools/pg404/</loc>
+     <lastmod>2019-10-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://root-ansh.github.io/curioustools/pg404/</loc>
+     <lastmod>2019-10-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://root-ansh.github.io/curioustools/pg404/</loc>
+     <lastmod>2019-10-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://root-ansh.github.io/curioustools/tab_blogs/android/world_of_videos/</loc>
+     <lastmod>2019-10-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://root-ansh.github.io/curioustools/tab_blogs/android/enums_and_intDefs/</loc>
-     <lastmod>2019-10-06</lastmod>
+     <lastmod>2019-10-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://root-ansh.github.io/curioustools/tab_blogs/web/mkdocs/basic_syntax/</loc>
-     <lastmod>2019-10-06</lastmod>
+     <lastmod>2019-10-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>

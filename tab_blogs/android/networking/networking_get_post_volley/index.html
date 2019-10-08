@@ -13,7 +13,7 @@
         <meta name="description" content="Google certified Associate Android Dev">
       
       
-        <link rel="canonical" href="https://root-ansh.github.io/curioustools/tab_blogs/android/enums_and_intDefs/">
+        <link rel="canonical" href="https://root-ansh.github.io/curioustools/tab_blogs/android/networking/networking_get_post_volley/">
       
       
         <meta name="author" content="Ansh Sachdeva(root-ansh)">
@@ -37,18 +37,18 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="../../../assets/images/favicon.ico">
+      <link rel="shortcut icon" href="../../../../assets/images/favicon.ico">
       <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
     
     
       
-        <title>Enums and @IntDefs - Curioustools</title>
+        <title>Part3, Volley - Curioustools</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/application.30686662.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/application.30686662.css">
       
-        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.a8b3c06d.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/application-palette.a8b3c06d.css">
       
       
         
@@ -57,7 +57,7 @@
       
     
     
-      <script src="../../../assets/javascripts/modernizr.74668098.js"></script>
+      <script src="../../../../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
@@ -66,7 +66,7 @@
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="../../../../assets/fonts/material-icons.css">
     
     
     
@@ -91,7 +91,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#enums-and-intdefs" tabindex="1" class="md-skip">
+      <a href="#networking-basics-making-a-get-post-connectionvolley" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -102,7 +102,7 @@
       <div class="md-flex__cell md-flex__cell--shrink">
         <a href="https://root-ansh.github.io/curioustools/" title="Curioustools" class="md-header-nav__button md-logo">
           
-            <img src="../../../assets/logo/logo.svg" width="24" height="24">
+            <img src="../../../../assets/logo/logo.svg" width="24" height="24">
           
         </a>
       </div>
@@ -117,7 +117,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Enums and @IntDefs
+                Part3, Volley
               
             </span>
           
@@ -194,7 +194,7 @@
         
   <li class="md-tabs__item">
     
-      <a href="../../.." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         About Me
       </a>
     
@@ -206,7 +206,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../../tab_edu/edu_details/" class="md-tabs__link">
+        <a href="../../../../tab_edu/edu_details/" class="md-tabs__link">
           Education Details
         </a>
       
@@ -219,7 +219,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../../tab_work_exp/work_exp/" class="md-tabs__link">
+        <a href="../../../../tab_work_exp/work_exp/" class="md-tabs__link">
           Work Experience
         </a>
       
@@ -232,7 +232,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../../tab_projects/project_summary/" class="md-tabs__link">
+        <a href="../../../../tab_projects/project_summary/" class="md-tabs__link">
           Portfolio
         </a>
       
@@ -245,7 +245,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../blog_summary/" class="md-tabs__link md-tabs__link--active">
+        <a href="../../../blog_summary/" class="md-tabs__link md-tabs__link--active">
           Blogs
         </a>
       
@@ -268,7 +268,7 @@
   <label class="md-nav__title md-nav__title--site" for="__drawer">
     <a href="https://root-ansh.github.io/curioustools/" title="Curioustools" class="md-nav__button md-logo">
       
-        <img src="../../../assets/logo/logo.svg" width="48" height="48">
+        <img src="../../../../assets/logo/logo.svg" width="48" height="48">
       
     </a>
     Curioustools
@@ -302,7 +302,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../.." title="About Me" class="md-nav__link">
+    <a href="../../../.." title="About Me" class="md-nav__link">
       About Me
     </a>
   </li>
@@ -333,7 +333,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../tab_edu/edu_details/" title="Education Details" class="md-nav__link">
+    <a href="../../../../tab_edu/edu_details/" title="Education Details" class="md-nav__link">
       Education Details
     </a>
   </li>
@@ -369,7 +369,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../tab_work_exp/work_exp/" title="Work Experience" class="md-nav__link">
+    <a href="../../../../tab_work_exp/work_exp/" title="Work Experience" class="md-nav__link">
       Work Experience
     </a>
   </li>
@@ -405,7 +405,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../tab_projects/project_summary/" title="Portfolio" class="md-nav__link">
+    <a href="../../../../tab_projects/project_summary/" title="Portfolio" class="md-nav__link">
       Portfolio
     </a>
   </li>
@@ -443,7 +443,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../blog_summary/" title="Introduction" class="md-nav__link">
+    <a href="../../../blog_summary/" title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -514,7 +514,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../basics/af1_the_architecture/" title="Part1, The Architecture" class="md-nav__link">
+    <a href="../../basics/af1_the_architecture/" title="Part1, The Architecture" class="md-nav__link">
       Part1, The Architecture
     </a>
   </li>
@@ -526,7 +526,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../basics/af2_parts_of_an_app/" title="Part2, Parts of an App(inc)" class="md-nav__link">
+    <a href="../../basics/af2_parts_of_an_app/" title="Part2, Parts of an App(inc)" class="md-nav__link">
       Part2, Parts of an App(inc)
     </a>
   </li>
@@ -567,7 +567,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../mobile_ads_1/" title="The World of mobile ads (Part1)" class="md-nav__link">
+    <a href="../../mobile_ads_1/" title="The World of mobile ads (Part1)" class="md-nav__link">
       The World of mobile ads (Part1)
     </a>
   </li>
@@ -582,10 +582,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-3" type="checkbox" id="nav-5-2-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-3" type="checkbox" id="nav-5-2-3" checked>
     
     <label class="md-nav__link" for="nav-5-2-3">
       Networking
@@ -601,10 +603,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-3-1" type="checkbox" id="nav-5-2-3-1">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-3-1" type="checkbox" id="nav-5-2-3-1" checked>
     
     <label class="md-nav__link" for="nav-5-2-3-1">
       GetPost
@@ -622,7 +626,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../networking/networking_get_post_basics/" title="Part1, basics" class="md-nav__link">
+    <a href="../networking_get_post_basics/" title="Part1, basics" class="md-nav__link">
       Part1, basics
     </a>
   </li>
@@ -634,7 +638,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../networking/networking_get_post_native/" title="Part2, The native way" class="md-nav__link">
+    <a href="../networking_get_post_native/" title="Part2, The native way" class="md-nav__link">
       Part2, The native way
     </a>
   </li>
@@ -644,11 +648,83 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../networking/networking_get_post_volley/" title="Part3, Volley" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Part3, Volley
+      </label>
+    
+    <a href="./" title="Part3, Volley" class="md-nav__link md-nav__link--active">
       Part3, Volley
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#volley" class="md-nav__link">
+    volley
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adding-to-project" class="md-nav__link">
+    Adding to project:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usagetheory" class="md-nav__link">
+    Usage(theory):
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage-code" class="md-nav__link">
+    Usage (Code):
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advance-operations" class="md-nav__link">
+    Advance Operations:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -658,7 +734,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../networking/networking_get_post_okhttp/" title="Part4, OkHttp" class="md-nav__link">
+    <a href="../networking_get_post_okhttp/" title="Part4, OkHttp" class="md-nav__link">
       Part4, OkHttp
     </a>
   </li>
@@ -670,7 +746,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../networking/networking_get_post_gson/" title="Part4.1, GSON" class="md-nav__link">
+    <a href="../networking_get_post_gson/" title="Part4.1, GSON" class="md-nav__link">
       Part4.1, GSON
     </a>
   </li>
@@ -682,7 +758,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../pg404/" title="Part5, Retrofit(inc)" class="md-nav__link">
+    <a href="../../../../pg404/" title="Part5, Retrofit(inc)" class="md-nav__link">
       Part5, Retrofit(inc)
     </a>
   </li>
@@ -699,7 +775,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../pg404/" title="Image Downloading(inc)" class="md-nav__link">
+    <a href="../../../../pg404/" title="Image Downloading(inc)" class="md-nav__link">
       Image Downloading(inc)
     </a>
   </li>
@@ -711,7 +787,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../pg404/" title="Shimmer and progress(inc)" class="md-nav__link">
+    <a href="../../../../pg404/" title="Shimmer and progress(inc)" class="md-nav__link">
       Shimmer and progress(inc)
     </a>
   </li>
@@ -747,7 +823,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../world_of_videos/" title="Exoplayer" class="md-nav__link">
+    <a href="../../world_of_videos/" title="Exoplayer" class="md-nav__link">
       Exoplayer
     </a>
   </li>
@@ -762,12 +838,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-5" type="checkbox" id="nav-5-2-5" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-2-5" type="checkbox" id="nav-5-2-5">
     
     <label class="md-nav__link" for="nav-5-2-5">
       ZZZ_Misc
@@ -783,49 +857,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Enums and @IntDefs
-      </label>
-    
-    <a href="./" title="Enums and @IntDefs" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../enums_and_intDefs/" title="Enums and @IntDefs" class="md-nav__link">
       Enums and @IntDefs
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#enter-intdef" class="md-nav__link">
-    Enter IntDef
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -883,7 +919,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../web/mkdocs/basic_syntax/" title="Basic Syntax" class="md-nav__link">
+    <a href="../../../web/mkdocs/basic_syntax/" title="Basic Syntax" class="md-nav__link">
       Basic Syntax
     </a>
   </li>
@@ -937,9 +973,43 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#enter-intdef" class="md-nav__link">
-    Enter IntDef
+  <a href="#volley" class="md-nav__link">
+    volley
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adding-to-project" class="md-nav__link">
+    Adding to project:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usagetheory" class="md-nav__link">
+    Usage(theory):
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage-code" class="md-nav__link">
+    Usage (Code):
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advance-operations" class="md-nav__link">
+    Advance Operations:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -959,34 +1029,212 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/root-ansh/curioustools/edit/master/docs/tab_blogs/android/enums_and_intDefs.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/root-ansh/curioustools/edit/master/docs/tab_blogs/android/networking/networking_get_post_volley.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="enums-and-intdefs">Enums and @IntDefs<a class="headerlink" href="#enums-and-intdefs" title="Permanent link">#</a></h1>
-<p>Enumerations serve the purpose of representing a group of named constants in a programming language<br />
-We often use <code>Enums</code> to make our cool, restricted group of values tht a function or statement could take.<br />
-But they are usually considered a bad practise in android because Enums often require more than twice as much memory as static constants.</p>
-<h2 id="enter-intdef">Enter <code>IntDef</code><a class="headerlink" href="#enter-intdef" title="Permanent link">#</a></h2>
-<p><code>@IntDef</code> is a way of replacing an integer enum where there's a parameter that should only
- accept explicit int values.We can use IntDef to ensure that the value is one of the expected values
- by adding this annotation. For eg:<br />
-<pre class="codehilite"><code class="language-java">
-public class example {
-   @IntDef( {Type.TYPE_MUSIC,Type.TYPE_PHOTO,Type.TYPE_TEXT})
-    public  @interface  Type{
-        int TYPE_MUSIC = 0;
-        int TYPE_PHOTO = 21;
-        int TYPE_TEXT = 42;
+                <h1 id="networking-basics-making-a-get-post-connectionvolley">Networking Basics : Making a Get Post Connection(Volley)<a class="headerlink" href="#networking-basics-making-a-get-post-connectionvolley" title="Permanent link">#</a></h1>
+<p>In the 1<sup>st</sup> article of Networking series we, discussed the different terminologies related to networking in Android, along with some basic steps. As per 1<sup>st</sup> article,
+- We need Internet and access network Permissions for creating a connection
+- We might need to check for Internet availability  before  making a connection and during the data transfer(usually handled automatically)
+(refer <a href="https://www.google.co.in/search?q=todo%3A+change+this+link">1<sup>st</sup> article</a> )</p>
+<p>In the <a href="https://www.google.co.in/search?q=todo%3A+change+this+link">2<sup>nd</sup> article</a> , we saw how data can be downloaded using network fragment as a response string and how it could be set on the ui straightly.But production level apps doesn’t do that.They rather have a pretty ui where the data is set with full animations and loading screens.<br />
+Even when we say "reponse string", we meant something like this:<br />
+<pre class="codehilite"><code class="language-json">{
+  "items": [
+    {
+      "owner": {
+        "reputation": 36476,
+        "user_id": 7207392,
+        "user_type": "registered",
+        "accept_rate": 73,
+        "profile_image": "https://www.gravatar.com/avatar/dadc9567dde5f02b09a29695eca1ce40?s=128&amp;d=identicon&amp;r=PG&amp;f=1",
+        "display_name": "Paul Panzer",
+        "link": "https://stackoverflow.com/users/7207392/paul-panzer"
+      },
+      "is_accepted": false,
+      "score": 0,
+      "last_activity_date": 1570568059,
+      "last_edit_date": 1570568059,
+      "creation_date": 1570566735,
+      "answer_id": 58293716,
+      "question_id": 58292546
+    },
+    {
+      "owner": {
+        "reputation": 21,
+        "user_id": 12165300,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/05ad0547978cace7429e947736861196?s=128&amp;d=identicon&amp;r=PG&amp;f=1",
+        "display_name": "rsomji",
+        "link": "https://stackoverflow.com/users/12165300/rsomji"
+      },
+      "is_accepted": false,
+      "score": 0,
+      "last_activity_date": 1570568055,
+      "creation_date": 1570568055,
+      "answer_id": 58293951,
+      "question_id": 58289314
+    },
+    {
+      "owner": {
+        "reputation": 1982,
+        "user_id": 2042457,
+        "user_type": "registered",
+        "accept_rate": 56,
+        "profile_image": "https://i.stack.imgur.com/xQVEN.jpg?s=128&amp;g=1",
+        "display_name": "aksappy",
+        "link": "https://stackoverflow.com/users/2042457/aksappy"
+      },
+      "is_accepted": false,
+      "score": 0,
+      "last_activity_date": 1570568054,
+      "creation_date": 1570568054,
+      "answer_id": 58293950,
+      "question_id": 58290873
+    },
+    {
+      "owner": {
+        "reputation": 472124,
+        "user_id": 1491895,
+        "user_type": "registered",
+        "accept_rate": 69,
+        "profile_image": "https://www.gravatar.com/avatar/82f9e178a16364bf561d0ed4da09a35d?s=128&amp;d=identicon&amp;r=PG",
+        "display_name": "Barmar",
+        "link": "https://stackoverflow.com/users/1491895/barmar"
+      },
+      "is_accepted": true,
+      "score": 1,
+      "last_activity_date": 1570568051,
+      "last_edit_date": 1570568051,
+      "creation_date": 1570514725,
+      "answer_id": 58280936,
+      "question_id": 58280903
+    },
+    {
+      "owner": {
+        "reputation": 220,
+        "user_id": 11601996,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/51c452c987f2541f3c4d661a80359878?s=128&amp;d=identicon&amp;r=PG&amp;f=1",
+        "display_name": "Peter Li",
+        "link": "https://stackoverflow.com/users/11601996/peter-li"
+      },
+      "is_accepted": false,
+      "score": 0,
+      "last_activity_date": 1570568046,
+      "creation_date": 1570568046,
+      "answer_id": 58293947,
+      "question_id": 58264206
     }
+  ],
+  "has_more": true,
+  "backoff": 10,
+  "quota_max": 10000,
+  "quota_remaining": 9995
+}</code></pre>
+This is a reponse from the stack overflow Answers <a href="https://api.stackexchange.com/2.2/answers?page=1&amp;pagesize=5&amp;order=desc&amp;sort=activity&amp;site=stackoverflow">API</a> .It has various fileds like  questionid, answereId, creationdata, etc but we didn’t even converted this  json string to some list of objects or strings, we just dumped it in our textview as it is.  </p>
+<p>In a prettier version of our app :
+1. Our data string would have been downloaded in a background thread, just like this
+2. there would have been a recyclerview showing each question , with picture in left , title in top and subtitle below that.
+3. We would then define a class ‘EachRowData’ with fields like id, question title, answertitle , creation date,etc ., with all those constructers and getters and setters
+4. We would then convert out downloaded jsonString to the List<EachRowdata> by first converting  this string to JSONObject class’s object and then iterating through each object.This process is called converting from JSON to POJO (POJO:plain old java object)  </p>
+<p>These are a lot of steps and their code, as we know, ends up being a massive monster. So there are many libraries build to perform above tasks in a simpler manner. <br />
+- Volley/Okhttp/Retrofit are libraries which simplifies the process of downloading jsonString from api ( and some other tasks)  </p>
+<ul>
+<li>GSON is a popuar google library used for converting the json to pojo.  </li>
+<li>Picasso/glide/fresco/volley image are libraries build to simplify downloading and displaying of images. This is because  a downloaded bitstream would not be converted to a string and would require some extra functions like scaling ,transformation,etc</li>
+</ul>
+<h2 id="volley">volley<a class="headerlink" href="#volley" title="Permanent link">#</a></h2>
+<p>Volley is an HTTP library that makes networking for Android apps easier and, most importantly, faster. For more information about Volley and how to use it, visit the <a href="https://developer.android.com/training/volley/index.html">Android developer training
+page</a>.  </p>
+<h3 id="adding-to-project">Adding to project:<a class="headerlink" href="#adding-to-project" title="Permanent link">#</a></h3>
+<pre class="codehilite"><code>   Implementation  'com.android.volley:volley:1.1.1'</code></pre>
 
-  // Mark the argument as restricted to these enumerated types
-  public void getItemType(@Type int itemType) {
-    int res = itemType;
-  }
-}</code></pre></p>
-<p>The function will allow user to pass any integer value, but will give a lint warning if value is not
-<code>Type.TYPE_MUSIC</code>,<code>Type.TYPE_PHOTO</code>or<code>Type.TYPE_TEXT</code>(yes, even if 0,21 or 42 are passed directly 
-too ).</p>
+<h3 id="usagetheory">Usage(theory):<a class="headerlink" href="#usagetheory" title="Permanent link">#</a></h3>
+<ol>
+<li>create a response listener</li>
+<li>create an error listener</li>
+<li>create a response request</li>
+<li>create a request queue</li>
+<li>add request to queue</li>
+</ol>
+<h3 id="usage-code">Usage (Code):<a class="headerlink" href="#usage-code" title="Permanent link">#</a></h3>
+<pre class="codehilite"><code class="language-java">public class Activity2 extends AppCompatActivity {
+    TextView tv2; Button bt2;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_2);
+
+        tv2=findViewById(R.id.tv2);
+        bt2=findViewById(R.id.bt2);
+
+        String url = "https://api.stackexchange.com/2.2/questions?pagesize=5&amp;order=desc&amp;sort=activity&amp;site=stackoverflow";
+
+        Response.Listener&lt;String&gt; responseListener = getResponseListener();
+        Response.ErrorListener errorListener = getErrorListener();
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url,responseListener,errorListener );
+        RequestQueue queue = Volley.newRequestQueue(this);
+
+        bt2.setOnClickListener(v-&gt; queue.add(stringRequest));
+    }
+    private Response.ErrorListener getErrorListener() {
+        return new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                tv2.setText("That didn't work!");
+            }};
+    }
+    private Response.Listener&lt;String&gt; getResponseListener() {
+        return new Response.Listener&lt;String&gt;() {
+            @Override
+            public void onResponse(String response) {
+                // Display the first 500 characters of the response string.
+                tv2.setText("Response is:\n" + response);
+            }
+        };
+    }</code></pre>
+
+<p>Advantages of volley:  </p>
+<ul>
+<li>Automatic scheduling of network requests.  </li>
+<li>Multiple concurrent network connections.  </li>
+<li>Transparent disk and memory response caching with standard HTTP cache coherence.  </li>
+<li>Support for request prioritization.  </li>
+<li>Cancellation request API. You can cancel a single request, or you can set blocks or scopes of requests to cancel.  </li>
+<li>Ease of customization, for example, for retry and backoff.  </li>
+<li>Strong ordering that makes it easy to correctly populate your UI with data fetched asynchronously from the network.  </li>
+<li>Debugging and tracing tools.  </li>
+</ul>
+<h3 id="advance-operations">Advance Operations:<a class="headerlink" href="#advance-operations" title="Permanent link">#</a></h3>
+<ul>
+<li><strong>Post Request</strong>  </li>
+</ul>
+<p><a href="https://stackoverflow.com/a/33578202">https://stackoverflow.com/a/33578202</a>  </p>
+<ul>
+<li><strong>Handling  request cancelling</strong>  </li>
+</ul>
+<pre class="codehilite"><code>//before adding string request in queue:
+Object TAG = "Hi";
+stringRequest.setTag(TAG);  
+
+
+// cancelling the request on click:
+btCancelLoading.setOnClickListener(v-&gt;{
+                   queue.cancelAll(TAG);
+});
+</code></pre>
+
+<ul>
+<li>
+<p><strong>Making a custom Network queue with custom caching and thread handling</strong>: <br />
+<a href="https://developer.android.com/training/volley/requestqueue">https://developer.android.com/training/volley/requestqueue</a></p>
+</li>
+<li>
+<p><strong>Making a custom Network request</strong> : like a direct json object request or direct pojo request :<br />
+<a href="https://developer.android.com/training/volley/request-custom#example:-gsonrequest">https://developer.android.com/training/volley/request-custom#example:-gsonrequest </a>. the example there shows ho we can use gson library alongside volley  to directly receive a list of pojos by extending Network request class</p>
+</li>
+</ul>
                 
                   
                 
@@ -1007,7 +1255,7 @@ too ).</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../world_of_videos/" title="Exoplayer" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../networking_get_post_native/" title="Part2, The native way" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1016,19 +1264,19 @@ too ).</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Exoplayer
+                Part2, The native way
               </span>
             </div>
           </a>
         
         
-          <a href="../../web/mkdocs/basic_syntax/" title="Basic Syntax" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../networking_get_post_okhttp/" title="Part4, OkHttp" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Basic Syntax
+                Part4, OkHttp
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -1055,7 +1303,7 @@ too ).</p>
       </div>
       
   <div class="md-footer-social">
-    <link rel="stylesheet" href="../../../assets/fonts/font-awesome.css">
+    <link rel="stylesheet" href="../../../../assets/fonts/font-awesome.css">
     
       <a href="https://github.com/root-ansh" class="md-footer-social__link fa fa-github"></a>
     
@@ -1071,9 +1319,9 @@ too ).</p>
       
     </div>
     
-      <script src="../../../assets/javascripts/application.c648116f.js"></script>
+      <script src="../../../../assets/javascripts/application.c648116f.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"../../../.."}})</script>
       
     
   </body>
