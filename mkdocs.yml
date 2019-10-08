@@ -87,11 +87,29 @@ nav:
     - Blogs:
         - Introduction : tab_blogs/blog_summary.md
         - Android : 
-            - VideoPlayer:
-                - tab_blogs/android/world_of_videos.md
+            - Basics:  
+                - Android Fundamentals :
+                    - Part1, The Architecture: tab_blogs/android/basics/af1_the_architecture.md
+                    - Part2, Parts of an App(inc): tab_blogs/android/basics/af2_parts_of_an_app.md
+              
             - MobileAds:
                 - tab_blogs/android/mobile_ads_1.md
-            - Misc:    
+            - Networking:
+                - GetPost:
+                    - Part1, basics: tab_blogs/android/networking/networking_get_post_basics.md
+                    - Part2, The native way: tab_blogs/android/networking/networking_get_post_native.md
+                    - Part3, Volley: tab_blogs/android/networking/networking_get_post_volley.md
+                    - Part4, OkHttp: tab_blogs/android/networking/networking_get_post_okhttp.md
+                    - Part4.1, GSON: tab_blogs/android/networking/networking_get_post_gson.md 
+                    - Part5, Retrofit(inc):  pg404.md 
+                - Image Downloading(inc):  pg404.md 
+                - Shimmer and progress(inc):  pg404.md 
+                
+            
+            - VideoPlayer:
+                - tab_blogs/android/world_of_videos.md
+            
+            - ZZZ_Misc:    
                 - tab_blogs/android/enums_and_intDefs.md
         - Web:
             - Mkdocs:

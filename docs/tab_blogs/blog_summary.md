@@ -20,7 +20,8 @@ human.
 
 So, my aim of creating this site was to open source everything that I have learned so far.
 It would be beneficial in 2 ways : 1)this would create a digital record of my learnings so
-I won't worry if i forget about them and 2) you might find this content useful. 
+I won't worry if i forget about them and 2) you might find this content useful.  
+Note that This may contain content from proprietary sources and i don't take credits for any such work.
 
 -- Ansh[.](misc/daily_logs.md)  
 
